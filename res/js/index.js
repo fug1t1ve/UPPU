@@ -67,6 +67,6 @@ function loadmorecards(){
                         </div>`)
     }
     $('#cardplace').append(`                    <div class="container-fluid text-center" id="reload">
-    <button type="button" class="btn btn-warning"  style="margin-bottom: 1em;" onclick="loadmorecards()">Load more..</button>
+    <button type="button" class="btn btn-outline-warning"  style="margin-bottom: 1em;" onclick="loadmorecards()">Load more..</button>
 </div>`)
 }
