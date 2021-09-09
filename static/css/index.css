@@ -20,10 +20,6 @@ h1 {
     margin-top: -30px;
 }
 
-html{
-    background-image: url('{% static "img/background.jpg" %}');
-}
-
 .continue-btn{
     font-family: 'Righteous', cursive;
     border-color: #ff008c;
@@ -49,7 +45,8 @@ html{
 .display-name{
     font-family: 'Ma Shan Zheng', cursive;
     font-size: xx-large;
-    text-shadow: 0px 0px 20px palevioletred;
+    text-shadow: 0px 0px 20px yellow;
+    padding: 0em;
 }
 p{
     color: #000;
@@ -58,6 +55,7 @@ a.nav-link,
 a.nav-link:hover{
     text-decoration: none;
     color: #ff008c;
+    font-family: 'Righteous', cursive;
 }
 a.nav-link.active, 
 a.nav-link.active:hover {
@@ -77,4 +75,10 @@ a.nav-link.active:hover {
     margin-top: -3em;
     color: #ffffff;
     text-align: center;
+}
+.title{
+    color:#ff008c;
+    font-family: 'Ma Shan Zheng', cursive;
+    font-size: 10em;
+    text-shadow: 0px 10px 10px yellow;
 }

@@ -24,17 +24,23 @@ function information(){
 
 function loadButtom() {
     $('#downelement').show()
-    document.getElementById('downelement').scrollIntoView()
+    for(let i = 0;i<=2;i++){
+        loadmorecards()
+    }
+    document.getElementById('downelement').scrollIntoView({
+        behavior: 'smooth'
+    })
+    $('#reload').show()
 }
 
 function loadmorecards(){
-    var element = document.getElementById('#cardplace')
+    $('#reload').remove()
     for(let i = 0;i<2;i++){
-        element.append(`                    <div class="row">
+        $('#cardplace').append(`                    <div class="row">
                         <div class="card mb-3 col-6" style="max-width: 540px;">
                             <div class="row no-gutters">
                                 <div class="col-md-4">
-                                    <img src="{% static 'img/back.png' %}" alt="marijuana" class='card-img-top'>
+                                    <img src="/static/img/back.png" alt="marijuana" class='card-img-top'>
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
@@ -48,7 +54,7 @@ function loadmorecards(){
                         <div class="card mb-3 col-6" style="max-width: 540px;margin-left: auto;">
                             <div class="row no-gutters">
                                 <div class="col-md-4">
-                                    <img src="{% static 'img/back.png' %}" alt="marijuana" class='card-img-top'>
+                                    <img src="/static/img/back.png" alt="marijuana" class='card-img-top'>
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
@@ -60,4 +66,7 @@ function loadmorecards(){
                             </div>
                         </div>`)
     }
+    $('#cardplace').append(`                    <div class="container-fluid text-center" id="reload">
+    <button type="button" class="btn btn-outline-warning"  style="margin-bottom: 1em;" onclick="loadmorecards()">Load more..</button>
+</div>`)
 }
