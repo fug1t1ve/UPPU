@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> UPPU's Store </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet"  href="{%  static  'css/index.css'  %}">
+        <style>
+            html{
+                background-image: url('{% static "img/background.jpg" %}');
+                background-repeat: no-repeat;
+                background-size: 60%;
+                background-position: center;
+                background-position-y: 5em;
+                background-color: black;
+                opacity: 0.9;
+            }
+        </style>
+    </head>
+    <body style="background-color:transparent;overflow:hidden;">
+        <div class="headcontainer jumbotron container">
+            <h1 class='d-flex justify-content-center'> UPPU Stores</h1>
+            <p class='data'>Welcome to the online ganja store.</p>
+        </div>
+    </body>
+</html>
