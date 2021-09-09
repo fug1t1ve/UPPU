@@ -24,7 +24,13 @@ function information(){
 
 function loadButtom() {
     $('#downelement').show()
-    document.getElementById('downelement').scrollIntoView()
+    for(let i = 0;i<=2;i++){
+        loadmorecards()
+    }
+    document.getElementById('downelement').scrollIntoView({
+        behavior: 'smooth'
+    })
+    $('#reload').show()
 }
 
 function loadmorecards(){
