@@ -14,18 +14,147 @@
             html{
                 background-image: url('{% static "img/background.jpg" %}');
                 background-repeat: no-repeat;
-                background-size: 60%;
+                background-size: 65%;
                 background-position: center;
                 background-position-y: 5em;
                 background-color: black;
-                opacity: 0.9;
+                opacity: 1;
             }
         </style>
     </head>
-    <body style="background-color:transparent;overflow:hidden;">
+    <body style="background-color:transparent;" onload="information()">
         <div class="headcontainer jumbotron container">
-            <h1 class='d-flex justify-content-center'> UPPU Stores</h1>
-            <p class='data'>Welcome to the online ganja store.</p>
+            <h1 class='row d-flex justify-content-center'> UPPU Stores</h1>
+            <p class='row data justify-content-center' id="info"></p>
+            <div class = "row">
+                <div class="col-md-12 text-center">
+                    <button type="button" class="btn continue-btn" href="#downelement" onclick="loadButtom()">Continue to homepage</button>
+                </div>
+            </div>
         </div>
+        <div id="downelement" class = "bottomElement">
+            <div class="homescreen">
+                <div class = "container">
+                    <div class="row">
+                        <p class="col-xl-4 display-name" >
+                            <img src="{%static 'img/basket3-fill.svg'%}" height = 30px> 
+                            Uppu stores 
+                        </p>
+                        <ul class="col-xl-8 nav justify-content-center nav-pills nav-fill" style="padding-top: 0.5em;">
+                            <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#">Categories</a>
+                            </li>    
+                            <li class="nav-item">
+                            <a class="nav-link" href="#">Wishlist</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#">Login/Register</a>
+                            </li>
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                              </form>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container" style="margin-top: 8em;margin-bottom: 8em;">
+                    <div class="row">
+                        <div class="card mb-3 col-6" style="max-width: 540px;">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="{% static 'img/back.png' %}" alt="marijuana" class='card-img-top'>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3 col-6" style="max-width: 540px;margin-left: auto;">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="{% static 'img/back.png' %}" alt="marijuana" class='card-img-top'>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="card mb-3 col-6" style="max-width: 540px;">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="{% static 'img/back.png' %}" alt="marijuana" class='card-img-top'>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3 col-6" style="max-width: 540px;margin-left: auto;">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="{% static 'img/back.png' %}" alt="marijuana" class='card-img-top'>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="card mb-3 col-6" style="max-width: 540px;">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="{% static 'img/back.png' %}" alt="marijuana" class='card-img-top'>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3 col-6" style="max-width: 540px;margin-left: auto;">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="{% static 'img/back.png' %}" alt="marijuana" class='card-img-top'>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="footer">@copyrighted to the hostel boij ❤️</p>
     </body>
+    <script src="{% static 'js/index.js'%}"></script>
 </html>

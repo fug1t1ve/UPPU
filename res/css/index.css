@@ -23,3 +23,57 @@ h1 {
 html{
     background-image: url('{% static "img/background.jpg" %}');
 }
+
+.continue-btn{
+    font-family: 'Righteous', cursive;
+    border-color: #ff008c;
+    box-shadow: 0px 0px 20px yellow;
+    border-radius: 100px;
+    color: azure;
+}
+
+.continue-btn:hover{
+    color:black;
+    background-color: yellow;
+    font-weight: 100em;
+}
+
+.homescreen{
+    color: white;
+}
+
+.bottomElement{
+    background-color: #ffffff;
+}
+
+.display-name{
+    font-family: 'Ma Shan Zheng', cursive;
+    font-size: xx-large;
+}
+p{
+    color: #000;
+}
+a.nav-link,
+a.nav-link:hover{
+    text-decoration: none;
+    color: #ff008c;
+}
+a.nav-link.active, 
+a.nav-link.active:hover {
+    background-color: #ff008c!important;
+}
+
+.me-2{
+    margin-left: 2em;
+}
+.btn-outline-success{
+    background-color: #ff008c!important;
+    margin-left: 1em;
+    height: 2.5em;
+    color: #ffffff;
+}
+.footer{
+    margin-top: -3em;
+    color: #ffffff;
+    text-align: center;
+}
