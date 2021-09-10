@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> UPPU's Store </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet"  href="{%  static  'css/login.css'  %}">
+        <style>
+            body{
+                position: absolute;
+            }
+        </style>
+        <script>
+            $(document).ready(function(){
+                $(".bg").css("background-image", "url('{% static 'img/3.gif' %}')");
+                $("#login").click(function(){
+                    $("#id01").fadeIn();
+                    $(this).fadeOut("slow");
+                    $("#id02").fadeOut();
+                    
+                });
+                $("#cancel").click(function(){
+                    $("#id01").fadeOut();
+                    $("#id02").fadeIn();
+                    $("#login").fadeIn();
+                });
+            });
+          </script>
+    </head>
+  <body class="bg">
+    <button id="login" class="btn btnexpand" >Login</button>
+    <div id="id02" class="text">
+        <p>
+        Whoever said that money can't</p> <p>buy happiness simply didn't</p> <p> know where to go shopping. 
+        </p>
+    </div>
+    <div id="id01" class="modal">
+    
+    <form class="Login" action="/login">
+    <div class="headcontainer">
+        <label>   </label>
+      <img src="{% static 'img/2.jpg' %}" alt="Avatar" class="mx-auto d-block" >
+    
+        <div class="container name">
+            <label for="uname"><b>Username</b></label>
+        </div>
+        <div class="container nameenter">
+            <input type="text" placeholder="Enter Username" name="uname" required>
+        </div>
+        <div class="container pass"> <label for="psw"><b>Password</b></label></div>
+        <div class="container passtext"><input type="password" placeholder="Enter Password" name="psw" required>        
+        </div>
+        <div class="container">
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+            
+        </div>
+        <div class="container"><span class="psw">Forgot <a href="#">password?</a></span></div>
+        <div class="loginbtn">
+            <button class="btn btnexpand" type="submit">Login</button>
+        </div>
+
+    <div class="cancelbtn">
+            <button id="cancel" class="btn btnexpand" type="button">Cancel</button>
+            
+    </div>
+    <label>   </label>
+    </form>
+    </div>
+
+</body>
+</html>
