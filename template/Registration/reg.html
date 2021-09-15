@@ -10,6 +10,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <link rel="stylesheet"  href="{%  static  'css/reg.css'  %}">
+        <script src="{%  static  'js/address.js'  %}"></script>
         <style>
             body{
                 position: absolute;
@@ -17,7 +18,7 @@
         </style>
         <script>
             $(document).ready(function(){
-                $(".bg").css("background-image", "url('{% static 'img/5.gif' %}')");
+                $(".bg").css("background-image", "url('{% static 'img/5.jpg' %}')");
             })
             ;
             $(".toggle-password").click(function() {
@@ -35,13 +36,84 @@
     <body class="bg">
     <form class="Reg" action="/reg">
     <div class="headcontainer">
+    <div class="container header">
+        <h1>Registration</h1>
+    </div>
     <div class="container name">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Username" name="uname" required>
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Username" name="uname" required>
     </div>
     <div class="container email">
-    <label for="email"><b>Email ID</b></label>
-    <input type="email" name="mail" id="mailid">
+        <label for="email"><b>Email_ID</b></label>
+        <input type="email" placeholder="Mail" name="mail" id="email" required>
+    </div>
+    <div class="container phone">
+        <label for="phone"><b>Phone_number</b></label>
+        <input type="number" placeholder="Phone" name="Number" id="phone" required>
+    </div>
+    <div class="container">
+        <label for="autocomplete"><b>Address</b></label>
+    </div>
+    <div class="container address_home">
+        <input type="street" 
+               class="address" 
+               id="autocomplete" 
+               placeholder="Street" required>
+        
+        <input type="city" 
+               class="address" 
+               id="inputCity" 
+               placeholder="City" required>
+        
+        <input type="state" 
+               class="address" 
+               id="inputState" 
+               placeholder="State" required>
+        
+        <input type="zip" 
+               class="address" 
+               id="inputZip" 
+               placeholder="Zip" required>
+        
+        <input type="county" 
+               class="address" 
+               id="inputCounty" 
+               placeholder="County" required>
+        
+        <input type="country" 
+               class="address" 
+               id="inputCountry" 
+               placeholder="Country" required>
+    
+    </div>
+    <div class="container">
+    <label><br><br><br><br><br></label>
+    </div>
+    <div class="container DOB">
+        <label for="DoB"><b>Date_of_birth</b></label>
+        <input type="date" id="DoB" name="trip-start" value="2020-01-01" min="1900-01-01" max="2022-12-31">
+    </div>
+    <div class="container"><label><b>Gender</b></label></div>
+    <div id="gendercontainer" name="gendercontainer" class="container gender">
+
+        <div id="malecontain" class="floatBlock">
+            <label for="male"> <input id="male" name="Gendertype" type="radio" value="male" /><b>Male</b></label>
+        </div>
+
+        <div id="femalecontain" class="floatBlock">
+            <label for="female"> <input id="female" name="Gendertype" type="radio" value="female" /><b>Female</b></label>
+        </div>
+
+        <div id="othercontain" class="floatBlock">
+            <label for="other"> <input id="other" name="Gendertype" type="radio" /><b>Other</b></label>
+        </div>
+    </div>
+    <div class="container TnC">
+        <label for="Tnc"><b>Terms_and_conditions</b></label>
+        <input type="checkbox" name="tnc" id="TnC">
+    </div>
+    <div class="container submit">
+        <input type="submit">
     </div>
     </div>
     </form>

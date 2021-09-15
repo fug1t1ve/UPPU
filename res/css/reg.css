@@ -1,0 +1,76 @@
+.headcontainer{
+    margin-top: 10%;
+    margin-left: 140%;
+    color: rgb(0, 238, 255);
+}
+.header{
+  margin-top: 10%;
+  margin-left: 140%;
+  color:aqua
+}
+.container{
+    margin-top: 5%;
+}
+input, label {
+    margin: 5px 5px;
+  }
+  
+  .address_home {
+    width: 450px;
+  }
+  
+  .address {
+    float: left;
+  }
+  
+  #inputStreet {
+    width: 100%;
+  }
+  
+  #inputCity {
+    width: 50%;
+  }
+  
+  #inputState {
+    width: 15%;
+  }
+  
+  #inputZip {
+    width: 28%;
+  }
+  
+  #inputCounty {
+    width: 45%;
+  }
+  
+  #inputCountry {
+    width: 50%;
+  }
+
+  .floatBlock {
+    margin: 0 1.81em 0 0;
+  }
+  
+  .gender {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    break-before: always;
+  }
+
+  .submit {
+    color:antiquewhite;
+    background-color: gray;
+    opacity: 50%;
+    box-shadow: 0px 0px 50px whitesmoke;
+    
+  }
+
+  .submit:hover{
+    color:rgb(0, 0, 0);
+    background-color: blueviolet;
+    opacity: 100%;
+}
+
+  

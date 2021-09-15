@@ -185,9 +185,8 @@ img {
 }
 
 .field-icon {
-  float: right;
-  margin-left: 34%;
-  margin-top: 34%;
+  margin-left: 0%;
+  margin-top: 25%;
   position: relative;
   z-index: 2;
 }
