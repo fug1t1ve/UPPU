@@ -183,3 +183,12 @@ img {
     border-color: tranparent;
   }
 }
+
+.field-icon {
+  float: right;
+  margin-left: 34%;
+  margin-top: 34%;
+  position: relative;
+  z-index: 2;
+}
+

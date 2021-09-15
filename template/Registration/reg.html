@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> UPPU's Store </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet"  href="{%  static  'css/reg.css'  %}">
+        <style>
+            body{
+                position: absolute;
+            }
+        </style>
+        <script>
+            $(document).ready(function(){
+                $(".bg").css("background-image", "url('{% static 'img/5.gif' %}')");
+            })
+            ;
+            $(".toggle-password").click(function() {
+                $(this).toggleClass("fa-eye fa-eye-slash");
+                var input = $($(this).attr("toggle"));
+                if (input.attr("type") == "password") {
+                    input.attr("type", "text");
+                } 
+                else {
+                    input.attr("type", "password");
+                }
+            });
+          </script>
+    </head>
+    <body class="bg">
+    <form class="Reg" action="/reg">
+    <div class="headcontainer">
+    <div class="container name">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Username" name="uname" required>
+    </div>
+    <div class="container email">
+    <label for="email"><b>Email ID</b></label>
+    <input type="email" name="mail" id="mailid">
+    </div>
+    </div>
+    </form>
+    </body>
