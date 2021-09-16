@@ -2,9 +2,6 @@
     margin-top: 10%;
     margin-left: 140%;
     color: rgb(0, 238, 255);
-    background-color: blue;
-    box-shadow: 0px 0px 50px white;
-    border-radius: 10%;
 }
 .header{
   margin-top: 10%;
@@ -12,7 +9,7 @@
   color:aqua
 }
 .container{
-    margin-top:5%;
+    margin-top: 5%;
 }
 input, label {
     margin: 5px 5px;
@@ -62,5 +59,18 @@ input, label {
     break-before: always;
   }
 
+  .submit {
+    color:antiquewhite;
+    background-color: gray;
+    opacity: 50%;
+    box-shadow: 0px 0px 50px whitesmoke;
+    
+  }
+
+  .submit:hover{
+    color:rgb(0, 0, 0);
+    background-color: blueviolet;
+    opacity: 100%;
+}
 
   

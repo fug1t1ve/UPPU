@@ -11,6 +11,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <link rel="stylesheet"  href="{%  static  'css/reg.css'  %}">
         <script src="{%  static  'js/address.js'  %}"></script>
+        <script src="{%  static  'js/confirm.js'  %}"></script>
         <style>
             body{
                 position: absolute;
@@ -107,6 +108,11 @@
         <div id="othercontain" class="floatBlock">
             <label for="other"> <input id="other" name="Gendertype" type="radio" /><b>Other</b></label>
         </div>
+    </div>
+    <div class="container password">
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password" required>
+        <input type="password" placeholder="Confirm Password" id="confirm_password" required>
     </div>
     <div class="container TnC">
         <label for="Tnc"><b>Terms_and_conditions</b></label>
